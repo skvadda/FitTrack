@@ -18,6 +18,7 @@
     {
       "src": "/api/(.*)",
       "dest": "/server/index.ts"
+      "status":200
     }
   ]
 }
