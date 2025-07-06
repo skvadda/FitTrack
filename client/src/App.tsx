@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
@@ -13,7 +14,8 @@ import NotFound from "@/pages/not-found";
 import Navigation from "@/components/layout/navigation";
 import MobileHeader from "@/components/layout/mobile-header";
 import { Skeleton } from "@/components/ui/skeleton";
-
+{children}
+<Analytics/>
 function AuthenticatedApp() {
   return (
     <div className="min-h-screen bg-gray-50">
